@@ -15,7 +15,7 @@ open class CrispView: UIView, UIWebViewDelegate {
     static var commandQueue: [String] = []
     static var isLoaded = false
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         CrispView.webView = UIWebView()
