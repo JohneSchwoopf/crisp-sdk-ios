@@ -54,11 +54,10 @@ open class CrispView: UIView, UIWebViewDelegate {
         super.removeFromSuperview()
     }
     
-    public func webViewDidFinishLoad(_ webView: UIWebView) {
+    open func webViewDidFinishLoad(_ webView: UIWebView) {
         CrispView.isLoaded = true
         CrispView.flushQueue()
     }
-    
     
     func loadWebView() {
         guard let webView = CrispView.webView else { return }
